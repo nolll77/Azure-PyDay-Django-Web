@@ -16,6 +16,9 @@ def set_env_variables():
     os.environ['DATABASE_HOST'] = 'azurepython.postgres.database.azure.com'
     os.environ['DATABASE_PORT'] = '5432'
 
+    # Application insights configuration
+    os.environ['APP_INSIGHTS_iNSTRUMENTATION_KEY'] = '8ec24f1e-f2c6-4560-b44d-bafae90f2761'
+
     print('Following environment variables set....')
     print(f"STORAGE_ACCOUNT_NAME = {os.environ.get('STORAGE_ACCOUNT_NAME')}")
     print(f"STORAGE_ACCOUNT_KEY = {os.environ.get('STORAGE_ACCOUNT_KEY')}")
@@ -29,4 +32,6 @@ def set_env_variables():
     print(f"DATABASE_PASSWORD = {os.environ.get('DATABASE_PASSWORD')}")
     print(f"DATABASE_HOST = {os.environ.get('DATABASE_HOST')}")
     print(f"DATABASE_PORT = {os.environ.get('DATABASE_PORT')}")
+
+    print(f"APP_INSIGHTS_iNSTRUMENTATION_KEY = {os.environ.get('APP_INSIGHTS_iNSTRUMENTATION_KEY')}")
 
