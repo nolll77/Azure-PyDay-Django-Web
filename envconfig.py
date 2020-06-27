@@ -2,9 +2,9 @@ import os
 
 def set_env_variables():
     # Media and static file Storage configurations
-    os.environ['STORAGE_ACCOUNT_NAME'] = 'sonustorageaccount'
-    os.environ['STORAGE_ACCOUNT_KEY']  = 'icYEfflIp3bP2LiJxK2+WHUwKLMbg8z1nGO90hf9pcV8onMMlShWN8Z8VkTb2edWeZZ26cL1ICdKZpV5wIBe6w=='
-    os.environ['STORAGE_ACCOUNT_DOMAIN'] = 'sonustorageaccount.blob.core.windows.net'
+    os.environ['STORAGE_ACCOUNT_NAME'] = 'pydaystorageaccount'
+    os.environ['STORAGE_ACCOUNT_KEY']  = 'cDCNj6Cjlf3IP2hamZ3RiipSHq+AmBJU8cFIlN72M5vE6cBlejdvSUpodvjgV/z03nM7fd+etQ8Liw/I6zqXKQ=='
+    os.environ['STORAGE_ACCOUNT_DOMAIN'] = 'pydaystorageaccount.blob.core.windows.net'
     os.environ['STORAGE_MEDIA_CONTAINER'] = 'media'
     os.environ['STORAGE_STATIC_CONTAINER'] = 'static'
 
@@ -17,7 +17,7 @@ def set_env_variables():
     os.environ['DATABASE_PORT'] = '5432'
 
     # Application insights configuration
-    os.environ['APP_INSIGHTS_iNSTRUMENTATION_KEY'] = '8ec24f1e-f2c6-4560-b44d-bafae90f2761'
+    os.environ['APP_INSIGHTS_iNSTRUMENTATION_KEY'] = '0d5096cc-9547-4c61-a887-060b97cc90d7'
 
     print('Following environment variables set....')
     print(f"STORAGE_ACCOUNT_NAME = {os.environ.get('STORAGE_ACCOUNT_NAME')}")
